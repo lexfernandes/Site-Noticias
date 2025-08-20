@@ -22,4 +22,7 @@
   --paragraph: 14px/160% var(--font-family);
 }
 
-
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+}

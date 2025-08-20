@@ -1,0 +1,25 @@
+.nav-primary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem; /* 20px 32px */
+}
+
+/* Itens de navegação */
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font: var(--heading2);
+  background: none;
+  cursor: pointer;
+}
+
+.menu-item img {
+  width: 20px;
+  height: 20px;
+}
+
+.logo img {
+  max-height: 40px;
+}
