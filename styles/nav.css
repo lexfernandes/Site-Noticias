@@ -23,3 +23,37 @@
 .logo img {
   max-height: 40px;
 }
+
+/* Navegação Secundaria */
+
+.nav-secondary {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 32px;
+  font: var(--heading2);
+  border-top: 1px solid var(--stroke-color);
+  border-bottom: 1px solid var(--stroke-color);
+}
+
+.nav-secondary > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Esconde a seta inicialmente */
+.nav-secondary > div img {
+  object-fit: cover;
+  opacity: 0;
+  transform: translateX(-5px); /* leve deslocamento p/ esquerda */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Mostra a seta no hover */
+.nav-secondary > div:hover img {
+  opacity: 1;
+  transform: translateX(0); /* volta para posição normal */
+}
